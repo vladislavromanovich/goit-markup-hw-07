@@ -26,6 +26,10 @@
     display: block;
     position: relative;
     transition: color 250ms var(--timing-function);
+    &:hover,
+    &:focus {
+      color: var(--hover-focus-color);
+    }
   }
   
   .navigation_contact {
@@ -35,17 +39,15 @@
     letter-spacing: 0.02em;
     color: var(--contact-aftertitle-color);
     transition: color 250ms var(--timing-function);
+    &:hover,
+    &:focus {
+      color: var(--hover-focus-color);
+    }
   }
   
-  .navigation_link:hover,
-  .navigation_link:focus {
-    color: var(--hover-focus-color);
-  }
+
   
-  .navigation_contact:hover,
-  .navigation_contact:focus {
-    color: var(--hover-focus-color);
-  }
+
   
   .navigation_list .link.current {
     color: var(--hover-focus-color);

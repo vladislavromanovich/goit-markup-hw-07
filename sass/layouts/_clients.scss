@@ -27,15 +27,16 @@
     align-items: center;
     justify-content: center;
     transition: border 250ms var(--timing-function);
+    &:hover,
+    &:focus {
+      border: 1px solid #2196f3;
+      border-radius: 4px;
+    }
+    &:hover .clients_icon,
+    &:focus .clients_icon {
+      fill: #2196f3;
+    }
   }
   
-  .clients_link:hover,
-  .clients_link:focus {
-    border: 1px solid #2196f3;
-    border-radius: 4px;
-  }
+
   
-  .clients_link:hover .clients_icon,
-  .clients_link:focus .clients_icon {
-    fill: #2196f3;
-  }

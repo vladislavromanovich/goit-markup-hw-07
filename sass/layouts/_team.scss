@@ -65,14 +65,15 @@
     justify-content: center;
     fill: #ffffff;
     transition: background-color 250ms var(--timing-function);
+    &:hover,
+    &:focus {
+      background-color: #2196f3;
+    }
+    &:hover .teamsoc_icon,
+    &:focus .teamsoc_icon {
+      fill: #ffffff;
+    }
   }
   
-  .teamsoc_link:hover,
-  .teamsoc_link:focus {
-    background-color: #2196f3;
-  }
+
   
-  .teamsoc_link:hover .teamsoc_icon,
-  .teamsoc_link:focus .teamsoc_icon {
-    fill: #ffffff;
-  }

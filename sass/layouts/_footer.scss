@@ -24,12 +24,13 @@
     letter-spacing: 0.03em;
     color: var(--address-map);
     transition: color 250ms var(--timing-function);
+    &:hover,
+    &:focus {
+      color: var(--hover-focus-color);
+    }
   }
   
-  .address_map:hover,
-  .address_map:focus {
-    color: var(--hover-focus-color);
-  }
+
   
   .address_link {
     font-style: normal;
@@ -38,12 +39,13 @@
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
     transition: color 250ms var(--timing-function);
+    &:hover,
+    &:focus {
+      color: var(--hover-focus-color);
+    }
   }
   
-  .address_link:hover,
-  .address_link:focus {
-    color: var(--hover-focus-color);
-  }
+
   
   .addres_item:not(:last-child) {
     margin-bottom: 9px;
@@ -84,17 +86,19 @@
     fill: #ffffff;
     background: rgba(255, 255, 255, 0.1);
     transition: background-color 250ms var(--timing-function);
+    &:hover,
+    &:focus {
+      background-color: #2196f3;
+    }
+    &:hover .teamsoc_icon,
+    &:focus .teamsoc_icon {
+      fill: #ffffff;
+    }
   }
   
-  .join_link:hover,
-  .join_link:focus {
-    background-color: #2196f3;
-  }
+
   
-  .join_link:hover .teamsoc_icon,
-  .join_link:focus .teamsoc_icon {
-    fill: #ffffff;
-  }
+
 
   .follow {
     margin-left: 93px;
@@ -123,11 +127,12 @@
     padding-left: 16px;
     gap: 12px;
     background-color: #2f303a;
+    &:focus {
+      outline-color: #2f303a;
+    }
   }
   
-  .follow_form:focus {
-    outline-color: #2f303a;
-  }
+
   
   .follow_icon {
     margin-left: 10px;
